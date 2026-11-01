@@ -1,5 +1,5 @@
 {
-  "disclaimer": "Illustrative sample data. Constituencies are real; candidate names, parties, assets, cases and promises are fictional placeholders until live ECI/ADR ingestion is enabled.",
+  "disclaimer": "Demo site: constituencies are real, but all candidate details (names, parties, assets, cases, promises) are made up for illustration. Do not treat them as fact.",
   "sources": [
     {
       "label": "ECI Affidavit Portal (Form 26)",

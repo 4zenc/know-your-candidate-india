@@ -36,7 +36,7 @@ const C = [
 
 const SRC = [{ label: "ECI Affidavit Portal (Form 26)", url: "https://affidavit.eci.gov.in" }, { label: "ADR / MyNeta", url: "https://myneta.info" }, { label: "Lok Sabha / Sansad", url: "https://sansad.in" }, { label: "MPLADS e-SAKSHI", url: "https://mplads.mospi.gov.in" }];
 
-const out = { disclaimer: "Illustrative sample data. Constituencies are real; candidate names, parties, assets, cases and promises are fictional placeholders until live ECI/ADR ingestion is enabled.", sources: SRC, constituencies: [], candidates: [] };
+const out = { disclaimer: "Demo site: constituencies are real, but all candidate details (names, parties, assets, cases, promises) are made up for illustration. Do not treat them as fact.", sources: SRC, constituencies: [], candidates: [] };
 
 for (const c of C) {
   const cids = [];

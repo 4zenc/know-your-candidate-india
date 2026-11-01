@@ -3,7 +3,7 @@
 Non-partisan, dark-mode-first Next.js app that visualises candidate affidavits (Form 26), criminal disclosures,
 MPLADS fund utilisation and manifesto-promise tracking for Indian constituencies, in English + all 22 scheduled languages.
 
-> **Data notice:** the bundled dataset (`src/data/constituencies.json`) is *illustrative*. Constituencies are real;
+> **Data notice:** demo data only. Constituencies are real; all candidate details are made up.
 > candidate names, parties, assets, cases and promises are fictional placeholders. Replace via the ingestion scripts before real use.
 
 ## Stack
