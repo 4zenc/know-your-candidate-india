@@ -1,0 +1,121 @@
+// PostgreSQL / Supabase schema for scaling beyond the bundled JSON dataset.
+// All money fields are stored in ₹ lakh to match src/lib/types.ts.
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum PromiseStatus {
+  FULFILLED
+  IN_PROGRESS
+  STALLED
+  BROKEN
+}
+
+enum ProjectStatus {
+  COMPLETED
+  IN_PROGRESS
+  SANCTIONED
+  DELAYED
+  STALLED
+}
+
+model Constituency {
+  id         String      @id @default(cuid())
+  slug       String      @unique
+  name       String
+  state      String
+  type       String      @default("Lok Sabha")
+  electors   Int
+  pins       String[]
+  candidates Candidate[]
+  mplads     MpladsFund?
+  projects   Project[]
+  mpStats    MpPerformance?
+
+  @@index([state])
+}
+
+model Candidate {
+  id              String        @id
+  name            String
+  party           String
+  age             Int
+  education       String
+  incumbent       Boolean       @default(false)
+  movableAssets   Float
+  immovableAssets Float
+  liabilities     Float
+  constituencyId  String
+  constituency    Constituency  @relation(fields: [constituencyId], references: [id])
+  wealthHistory   WealthSnapshot[]
+  cases           CriminalCase[]
+  promises        Promise[]
+
+  @@index([constituencyId])
+  @@index([name])
+}
+
+model WealthSnapshot {
+  id          String    @id @default(cuid())
+  candidateId String
+  year        Int
+  netWorth    Float
+  candidate   Candidate @relation(fields: [candidateId], references: [id])
+
+  @@unique([candidateId, year])
+}
+
+model CriminalCase {
+  id          String    @id @default(cuid())
+  candidateId String
+  section     String
+  description String
+  serious     Boolean
+  candidate   Candidate @relation(fields: [candidateId], references: [id])
+}
+
+model Promise {
+  id          String        @id @default(cuid())
+  candidateId String
+  text        String
+  status      PromiseStatus
+  sourceLabel String
+  sourceUrl   String
+  candidate   Candidate     @relation(fields: [candidateId], references: [id])
+}
+
+model MpladsFund {
+  id             String       @id @default(cuid())
+  constituencyId String       @unique
+  allocated      Float
+  released       Float
+  utilized       Float
+  constituency   Constituency @relation(fields: [constituencyId], references: [id])
+}
+
+model Project {
+  id             String        @id @default(cuid())
+  constituencyId String
+  title          String
+  category       String
+  costLakh       Float
+  status         ProjectStatus
+  completionPct  Int
+  constituency   Constituency  @relation(fields: [constituencyId], references: [id])
+}
+
+model MpPerformance {
+  id             String       @id @default(cuid())
+  constituencyId String       @unique
+  attendancePct  Int
+  debates        Int
+  questions      Int
+  privateBills   Int
+  constituency   Constituency @relation(fields: [constituencyId], references: [id])
+}

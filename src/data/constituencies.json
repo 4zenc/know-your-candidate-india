@@ -1,0 +1,1843 @@
+{
+  "disclaimer": "Illustrative sample data. Constituencies are real; candidate names, parties, assets, cases and promises are fictional placeholders until live ECI/ADR ingestion is enabled.",
+  "sources": [
+    {
+      "label": "ECI Affidavit Portal (Form 26)",
+      "url": "https://affidavit.eci.gov.in"
+    },
+    {
+      "label": "ADR / MyNeta",
+      "url": "https://myneta.info"
+    },
+    {
+      "label": "Lok Sabha / Sansad",
+      "url": "https://sansad.in"
+    },
+    {
+      "label": "MPLADS e-SAKSHI",
+      "url": "https://mplads.mospi.gov.in"
+    }
+  ],
+  "constituencies": [
+    {
+      "slug": "mumbai-south",
+      "name": "Mumbai South",
+      "state": "Maharashtra",
+      "type": "Lok Sabha",
+      "pins": [
+        "400001",
+        "400005",
+        "400026"
+      ],
+      "electors": 1550000,
+      "sittingMp": {
+        "candidateId": "mh-1",
+        "attendancePct": 81,
+        "debates": 42,
+        "questions": 187,
+        "privateBills": 3
+      },
+      "mplads": {
+        "allocated": 2500,
+        "released": 2250,
+        "utilized": 1890
+      },
+      "projects": [
+        {
+          "title": "Colaba pedestrian walkway upgrade",
+          "category": "Roads",
+          "costLakh": 420,
+          "status": "Completed",
+          "completionPct": 100
+        },
+        {
+          "title": "Municipal school science labs",
+          "category": "Education",
+          "costLakh": 310,
+          "status": "In Progress",
+          "completionPct": 64
+        },
+        {
+          "title": "Worli sewage line replacement",
+          "category": "Sanitation",
+          "costLakh": 780,
+          "status": "Delayed",
+          "completionPct": 38
+        },
+        {
+          "title": "Community health centre expansion",
+          "category": "Health",
+          "costLakh": 540,
+          "status": "In Progress",
+          "completionPct": 72
+        }
+      ],
+      "candidateIds": [
+        "mh-1",
+        "mh-2",
+        "mh-3"
+      ]
+    },
+    {
+      "slug": "chennai-central",
+      "name": "Chennai Central",
+      "state": "Tamil Nadu",
+      "type": "Lok Sabha",
+      "pins": [
+        "600003",
+        "600008",
+        "600010"
+      ],
+      "electors": 1380000,
+      "sittingMp": {
+        "candidateId": "tn-1",
+        "attendancePct": 88,
+        "debates": 57,
+        "questions": 242,
+        "privateBills": 5
+      },
+      "mplads": {
+        "allocated": 2500,
+        "released": 2500,
+        "utilized": 2310
+      },
+      "projects": [
+        {
+          "title": "Cooum bank storm-water drains",
+          "category": "Sanitation",
+          "costLakh": 690,
+          "status": "Completed",
+          "completionPct": 100
+        },
+        {
+          "title": "Corporation school smart classrooms",
+          "category": "Education",
+          "costLakh": 260,
+          "status": "Completed",
+          "completionPct": 100
+        },
+        {
+          "title": "Perambur arterial road resurfacing",
+          "category": "Roads",
+          "costLakh": 510,
+          "status": "In Progress",
+          "completionPct": 55
+        },
+        {
+          "title": "RO drinking water kiosks (40 sites)",
+          "category": "Water",
+          "costLakh": 180,
+          "status": "In Progress",
+          "completionPct": 80
+        }
+      ],
+      "candidateIds": [
+        "tn-1",
+        "tn-2",
+        "tn-3"
+      ]
+    },
+    {
+      "slug": "kolkata-dakshin",
+      "name": "Kolkata Dakshin",
+      "state": "West Bengal",
+      "type": "Lok Sabha",
+      "pins": [
+        "700019",
+        "700029",
+        "700033"
+      ],
+      "electors": 1620000,
+      "sittingMp": {
+        "candidateId": "wb-1",
+        "attendancePct": 73,
+        "debates": 38,
+        "questions": 133,
+        "privateBills": 2
+      },
+      "mplads": {
+        "allocated": 2500,
+        "released": 2000,
+        "utilized": 1420
+      },
+      "projects": [
+        {
+          "title": "Gariahat footpath & drainage revamp",
+          "category": "Roads",
+          "costLakh": 350,
+          "status": "Delayed",
+          "completionPct": 41
+        },
+        {
+          "title": "Tolly Nullah embankment repair",
+          "category": "Sanitation",
+          "costLakh": 880,
+          "status": "In Progress",
+          "completionPct": 47
+        },
+        {
+          "title": "Girls' school hostel block",
+          "category": "Education",
+          "costLakh": 295,
+          "status": "Completed",
+          "completionPct": 100
+        },
+        {
+          "title": "Primary health sub-centre",
+          "category": "Health",
+          "costLakh": 215,
+          "status": "Sanctioned",
+          "completionPct": 8
+        }
+      ],
+      "candidateIds": [
+        "wb-1",
+        "wb-2",
+        "wb-3"
+      ]
+    },
+    {
+      "slug": "bengaluru-south",
+      "name": "Bengaluru South",
+      "state": "Karnataka",
+      "type": "Lok Sabha",
+      "pins": [
+        "560004",
+        "560041",
+        "560070"
+      ],
+      "electors": 2210000,
+      "sittingMp": {
+        "candidateId": "ka-1",
+        "attendancePct": 79,
+        "debates": 49,
+        "questions": 168,
+        "privateBills": 4
+      },
+      "mplads": {
+        "allocated": 2500,
+        "released": 2400,
+        "utilized": 1750
+      },
+      "projects": [
+        {
+          "title": "Jayanagar lake rejuvenation",
+          "category": "Water",
+          "costLakh": 640,
+          "status": "Completed",
+          "completionPct": 100
+        },
+        {
+          "title": "Flyover approach junction fix",
+          "category": "Roads",
+          "costLakh": 720,
+          "status": "In Progress",
+          "completionPct": 58
+        },
+        {
+          "title": "Govt PU college lab upgrade",
+          "category": "Education",
+          "costLakh": 230,
+          "status": "Completed",
+          "completionPct": 100
+        },
+        {
+          "title": "Solid-waste segregation units",
+          "category": "Sanitation",
+          "costLakh": 410,
+          "status": "Stalled",
+          "completionPct": 22
+        }
+      ],
+      "candidateIds": [
+        "ka-1",
+        "ka-2",
+        "ka-3"
+      ]
+    },
+    {
+      "slug": "jaipur",
+      "name": "Jaipur",
+      "state": "Rajasthan",
+      "type": "Lok Sabha",
+      "pins": [
+        "302001",
+        "302017",
+        "302021"
+      ],
+      "electors": 2090000,
+      "sittingMp": {
+        "candidateId": "rj-1",
+        "attendancePct": 84,
+        "debates": 61,
+        "questions": 211,
+        "privateBills": 6
+      },
+      "mplads": {
+        "allocated": 2500,
+        "released": 2350,
+        "utilized": 2160
+      },
+      "projects": [
+        {
+          "title": "Walled-city water pipeline",
+          "category": "Water",
+          "costLakh": 590,
+          "status": "In Progress",
+          "completionPct": 69
+        },
+        {
+          "title": "Tonk Road bypass lighting",
+          "category": "Roads",
+          "costLakh": 190,
+          "status": "Completed",
+          "completionPct": 100
+        },
+        {
+          "title": "Anganwadi centre renovation (60)",
+          "category": "Education",
+          "costLakh": 270,
+          "status": "In Progress",
+          "completionPct": 76
+        },
+        {
+          "title": "District hospital trauma wing",
+          "category": "Health",
+          "costLakh": 830,
+          "status": "Delayed",
+          "completionPct": 44
+        }
+      ],
+      "candidateIds": [
+        "rj-1",
+        "rj-2",
+        "rj-3"
+      ]
+    },
+    {
+      "slug": "guwahati",
+      "name": "Guwahati",
+      "state": "Assam",
+      "type": "Lok Sabha",
+      "pins": [
+        "781001",
+        "781005",
+        "781021"
+      ],
+      "electors": 1470000,
+      "sittingMp": {
+        "candidateId": "as-1",
+        "attendancePct": 77,
+        "debates": 35,
+        "questions": 126,
+        "privateBills": 2
+      },
+      "mplads": {
+        "allocated": 2500,
+        "released": 2100,
+        "utilized": 1530
+      },
+      "projects": [
+        {
+          "title": "Bharalu river flood-control works",
+          "category": "Water",
+          "costLakh": 910,
+          "status": "In Progress",
+          "completionPct": 52
+        },
+        {
+          "title": "Dispur school building repair",
+          "category": "Education",
+          "costLakh": 240,
+          "status": "Completed",
+          "completionPct": 100
+        },
+        {
+          "title": "Beltola road drainage",
+          "category": "Roads",
+          "costLakh": 360,
+          "status": "Stalled",
+          "completionPct": 19
+        },
+        {
+          "title": "Urban primary health centre",
+          "category": "Health",
+          "costLakh": 205,
+          "status": "Sanctioned",
+          "completionPct": 12
+        }
+      ],
+      "candidateIds": [
+        "as-1",
+        "as-2",
+        "as-3"
+      ]
+    }
+  ],
+  "candidates": [
+    {
+      "id": "mh-1",
+      "name": "Anil Deshmukar",
+      "party": "Jan Vikas Morcha",
+      "constituency": "mumbai-south",
+      "age": 58,
+      "education": "Post Graduate",
+      "incumbent": true,
+      "assets": {
+        "movable": 41200,
+        "immovable": 98700
+      },
+      "liabilities": 21400,
+      "netWorth": 118500,
+      "assetGrowthPct": 38,
+      "wealthHistory": [
+        {
+          "year": 2019,
+          "netWorth": 84152
+        },
+        {
+          "year": 2020,
+          "netWorth": 91583
+        },
+        {
+          "year": 2021,
+          "netWorth": 99630
+        },
+        {
+          "year": 2022,
+          "netWorth": 103134
+        },
+        {
+          "year": 2023,
+          "netWorth": 112218
+        },
+        {
+          "year": 2024,
+          "netWorth": 118500
+        }
+      ],
+      "cases": {
+        "serious": [],
+        "other": [
+          {
+            "section": "IPC 188",
+            "description": "Disobedience to order promulgated by public servant"
+          }
+        ]
+      },
+      "promises": [
+        {
+          "id": "mh-1-p1",
+          "text": "Replace ageing water mains in old city wards",
+          "status": "Stalled",
+          "source": {
+            "label": "ECI Affidavit Portal (Form 26)",
+            "url": "https://affidavit.eci.gov.in"
+          }
+        },
+        {
+          "id": "mh-1-p2",
+          "text": "Open 3 digital libraries in municipal schools",
+          "status": "Fulfilled",
+          "source": {
+            "label": "ADR / MyNeta",
+            "url": "https://myneta.info"
+          }
+        },
+        {
+          "id": "mh-1-p3",
+          "text": "Cut hospital outpatient wait times below 45 minutes",
+          "status": "Stalled",
+          "source": {
+            "label": "Lok Sabha / Sansad",
+            "url": "https://sansad.in"
+          }
+        }
+      ]
+    },
+    {
+      "id": "mh-2",
+      "name": "Meera Kulkarney",
+      "party": "Rashtriya Pragati Dal",
+      "constituency": "mumbai-south",
+      "age": 49,
+      "education": "Graduate Professional",
+      "incumbent": false,
+      "assets": {
+        "movable": 28900,
+        "immovable": 52300
+      },
+      "liabilities": 9800,
+      "netWorth": 71400,
+      "assetGrowthPct": 22,
+      "wealthHistory": [
+        {
+          "year": 2019,
+          "netWorth": 59110
+        },
+        {
+          "year": 2020,
+          "netWorth": 59681
+        },
+        {
+          "year": 2021,
+          "netWorth": 63370
+        },
+        {
+          "year": 2022,
+          "netWorth": 67260
+        },
+        {
+          "year": 2023,
+          "netWorth": 67930
+        },
+        {
+          "year": 2024,
+          "netWorth": 71400
+        }
+      ],
+      "cases": {
+        "serious": [],
+        "other": []
+      },
+      "promises": [
+        {
+          "id": "mh-2-p1",
+          "text": "Cut hospital outpatient wait times below 45 minutes",
+          "status": "Broken",
+          "source": {
+            "label": "ADR / MyNeta",
+            "url": "https://myneta.info"
+          }
+        },
+        {
+          "id": "mh-2-p2",
+          "text": "Build 10 km of protected cycle lanes",
+          "status": "In Progress",
+          "source": {
+            "label": "Lok Sabha / Sansad",
+            "url": "https://sansad.in"
+          }
+        },
+        {
+          "id": "mh-2-p3",
+          "text": "Quarterly public ward-level budget meetings",
+          "status": "Broken",
+          "source": {
+            "label": "MPLADS e-SAKSHI",
+            "url": "https://mplads.mospi.gov.in"
+          }
+        }
+      ]
+    },
+    {
+      "id": "mh-3",
+      "name": "Farhan Sheikhdar",
+      "party": "Lok Samaj Party",
+      "constituency": "mumbai-south",
+      "age": 44,
+      "education": "12th Pass",
+      "incumbent": false,
+      "assets": {
+        "movable": 6100,
+        "immovable": 14500
+      },
+      "liabilities": 3200,
+      "netWorth": 17400,
+      "assetGrowthPct": 61,
+      "wealthHistory": [
+        {
+          "year": 2019,
+          "netWorth": 10699
+        },
+        {
+          "year": 2020,
+          "netWorth": 12006
+        },
+        {
+          "year": 2021,
+          "netWorth": 12814
+        },
+        {
+          "year": 2022,
+          "netWorth": 14382
+        },
+        {
+          "year": 2023,
+          "netWorth": 16136
+        },
+        {
+          "year": 2024,
+          "netWorth": 17400
+        }
+      ],
+      "cases": {
+        "serious": [
+          {
+            "section": "IPC 420",
+            "description": "Cheating and dishonestly inducing delivery of property"
+          }
+        ],
+        "other": [
+          {
+            "section": "IPC 341",
+            "description": "Wrongful restraint"
+          },
+          {
+            "section": "IPC 504",
+            "description": "Intentional insult to provoke breach of peace"
+          }
+        ]
+      },
+      "promises": [
+        {
+          "id": "mh-3-p1",
+          "text": "Quarterly public ward-level budget meetings",
+          "status": "Fulfilled",
+          "source": {
+            "label": "Lok Sabha / Sansad",
+            "url": "https://sansad.in"
+          }
+        },
+        {
+          "id": "mh-3-p2",
+          "text": "Install flood sensors along the coastal drains",
+          "status": "Stalled",
+          "source": {
+            "label": "MPLADS e-SAKSHI",
+            "url": "https://mplads.mospi.gov.in"
+          }
+        },
+        {
+          "id": "mh-3-p3",
+          "text": "Replace ageing water mains in old city wards",
+          "status": "Fulfilled",
+          "source": {
+            "label": "ECI Affidavit Portal (Form 26)",
+            "url": "https://affidavit.eci.gov.in"
+          }
+        }
+      ]
+    },
+    {
+      "id": "tn-1",
+      "name": "Karthikeyan Subramanyam",
+      "party": "Rashtriya Pragati Dal",
+      "constituency": "chennai-central",
+      "age": 61,
+      "education": "Doctorate",
+      "incumbent": true,
+      "assets": {
+        "movable": 77400,
+        "immovable": 214000
+      },
+      "liabilities": 36500,
+      "netWorth": 254900,
+      "assetGrowthPct": 44,
+      "wealthHistory": [
+        {
+          "year": 2019,
+          "netWorth": 173474
+        },
+        {
+          "year": 2020,
+          "netWorth": 190406
+        },
+        {
+          "year": 2021,
+          "netWorth": 208907
+        },
+        {
+          "year": 2022,
+          "netWorth": 218102
+        },
+        {
+          "year": 2023,
+          "netWorth": 239342
+        },
+        {
+          "year": 2024,
+          "netWorth": 254900
+        }
+      ],
+      "cases": {
+        "serious": [],
+        "other": [
+          {
+            "section": "IPC 143",
+            "description": "Unlawful assembly"
+          }
+        ]
+      },
+      "promises": [
+        {
+          "id": "tn-1-p1",
+          "text": "Desilt all major drains before monsoon each year",
+          "status": "Stalled",
+          "source": {
+            "label": "ECI Affidavit Portal (Form 26)",
+            "url": "https://affidavit.eci.gov.in"
+          }
+        },
+        {
+          "id": "tn-1-p2",
+          "text": "Commission 40 community RO water kiosks",
+          "status": "Fulfilled",
+          "source": {
+            "label": "ADR / MyNeta",
+            "url": "https://myneta.info"
+          }
+        },
+        {
+          "id": "tn-1-p3",
+          "text": "Modernise 12 corporation school buildings",
+          "status": "Stalled",
+          "source": {
+            "label": "Lok Sabha / Sansad",
+            "url": "https://sansad.in"
+          }
+        }
+      ]
+    },
+    {
+      "id": "tn-2",
+      "name": "Priya Venkataraghavan",
+      "party": "Jan Vikas Morcha",
+      "constituency": "chennai-central",
+      "age": 52,
+      "education": "Post Graduate",
+      "incumbent": false,
+      "assets": {
+        "movable": 31800,
+        "immovable": 61200
+      },
+      "liabilities": 12900,
+      "netWorth": 80100,
+      "assetGrowthPct": 19,
+      "wealthHistory": [
+        {
+          "year": 2019,
+          "netWorth": 67984
+        },
+        {
+          "year": 2020,
+          "netWorth": 68300
+        },
+        {
+          "year": 2021,
+          "netWorth": 72161
+        },
+        {
+          "year": 2022,
+          "netWorth": 76210
+        },
+        {
+          "year": 2023,
+          "netWorth": 76588
+        },
+        {
+          "year": 2024,
+          "netWorth": 80100
+        }
+      ],
+      "cases": {
+        "serious": [],
+        "other": []
+      },
+      "promises": [
+        {
+          "id": "tn-2-p1",
+          "text": "Modernise 12 corporation school buildings",
+          "status": "Broken",
+          "source": {
+            "label": "ADR / MyNeta",
+            "url": "https://myneta.info"
+          }
+        },
+        {
+          "id": "tn-2-p2",
+          "text": "Create a ward-wise grievance dashboard",
+          "status": "In Progress",
+          "source": {
+            "label": "Lok Sabha / Sansad",
+            "url": "https://sansad.in"
+          }
+        },
+        {
+          "id": "tn-2-p3",
+          "text": "Widen congested Perambur junction",
+          "status": "Broken",
+          "source": {
+            "label": "MPLADS e-SAKSHI",
+            "url": "https://mplads.mospi.gov.in"
+          }
+        }
+      ]
+    },
+    {
+      "id": "tn-3",
+      "name": "Selvam Arumugham",
+      "party": "Independent",
+      "constituency": "chennai-central",
+      "age": 47,
+      "education": "10th Pass",
+      "incumbent": false,
+      "assets": {
+        "movable": 4300,
+        "immovable": 9700
+      },
+      "liabilities": 5100,
+      "netWorth": 8900,
+      "assetGrowthPct": 83,
+      "wealthHistory": [
+        {
+          "year": 2019,
+          "netWorth": 4815
+        },
+        {
+          "year": 2020,
+          "netWorth": 5543
+        },
+        {
+          "year": 2021,
+          "netWorth": 6069
+        },
+        {
+          "year": 2022,
+          "netWorth": 6989
+        },
+        {
+          "year": 2023,
+          "netWorth": 8045
+        },
+        {
+          "year": 2024,
+          "netWorth": 8900
+        }
+      ],
+      "cases": {
+        "serious": [
+          {
+            "section": "IPC 406",
+            "description": "Criminal breach of trust"
+          }
+        ],
+        "other": [
+          {
+            "section": "IPC 188",
+            "description": "Disobedience to order promulgated by public servant"
+          },
+          {
+            "section": "IPC 506",
+            "description": "Criminal intimidation"
+          }
+        ]
+      },
+      "promises": [
+        {
+          "id": "tn-3-p1",
+          "text": "Widen congested Perambur junction",
+          "status": "Fulfilled",
+          "source": {
+            "label": "Lok Sabha / Sansad",
+            "url": "https://sansad.in"
+          }
+        },
+        {
+          "id": "tn-3-p2",
+          "text": "Open evening skill-training centres",
+          "status": "Stalled",
+          "source": {
+            "label": "MPLADS e-SAKSHI",
+            "url": "https://mplads.mospi.gov.in"
+          }
+        },
+        {
+          "id": "tn-3-p3",
+          "text": "Desilt all major drains before monsoon each year",
+          "status": "Fulfilled",
+          "source": {
+            "label": "ECI Affidavit Portal (Form 26)",
+            "url": "https://affidavit.eci.gov.in"
+          }
+        }
+      ]
+    },
+    {
+      "id": "wb-1",
+      "name": "Soumitra Bhattacharyya",
+      "party": "Lok Samaj Party",
+      "constituency": "kolkata-dakshin",
+      "age": 66,
+      "education": "Post Graduate",
+      "incumbent": true,
+      "assets": {
+        "movable": 52600,
+        "immovable": 142000
+      },
+      "liabilities": 18800,
+      "netWorth": 175800,
+      "assetGrowthPct": 27,
+      "wealthHistory": [
+        {
+          "year": 2019,
+          "netWorth": 135657
+        },
+        {
+          "year": 2020,
+          "netWorth": 145203
+        },
+        {
+          "year": 2021,
+          "netWorth": 155359
+        },
+        {
+          "year": 2022,
+          "netWorth": 158173
+        },
+        {
+          "year": 2023,
+          "netWorth": 169270
+        },
+        {
+          "year": 2024,
+          "netWorth": 175800
+        }
+      ],
+      "cases": {
+        "serious": [],
+        "other": []
+      },
+      "promises": [
+        {
+          "id": "wb-1-p1",
+          "text": "Restore Tolly Nullah embankments",
+          "status": "Stalled",
+          "source": {
+            "label": "ECI Affidavit Portal (Form 26)",
+            "url": "https://affidavit.eci.gov.in"
+          }
+        },
+        {
+          "id": "wb-1-p2",
+          "text": "Add 2 girls' school hostels",
+          "status": "Fulfilled",
+          "source": {
+            "label": "ADR / MyNeta",
+            "url": "https://myneta.info"
+          }
+        },
+        {
+          "id": "wb-1-p3",
+          "text": "Set up 24x7 ambulance bays at 5 hubs",
+          "status": "Stalled",
+          "source": {
+            "label": "Lok Sabha / Sansad",
+            "url": "https://sansad.in"
+          }
+        }
+      ]
+    },
+    {
+      "id": "wb-2",
+      "name": "Debjani Mukhopadhyay",
+      "party": "Jan Vikas Morcha",
+      "constituency": "kolkata-dakshin",
+      "age": 45,
+      "education": "Graduate",
+      "incumbent": false,
+      "assets": {
+        "movable": 19700,
+        "immovable": 38400
+      },
+      "liabilities": 7700,
+      "netWorth": 50400,
+      "assetGrowthPct": 35,
+      "wealthHistory": [
+        {
+          "year": 2019,
+          "netWorth": 37707
+        },
+        {
+          "year": 2020,
+          "netWorth": 38850
+        },
+        {
+          "year": 2021,
+          "netWorth": 42095
+        },
+        {
+          "year": 2022,
+          "netWorth": 45593
+        },
+        {
+          "year": 2023,
+          "netWorth": 46989
+        },
+        {
+          "year": 2024,
+          "netWorth": 50400
+        }
+      ],
+      "cases": {
+        "serious": [],
+        "other": [
+          {
+            "section": "IPC 504",
+            "description": "Intentional insult to provoke breach of peace"
+          }
+        ]
+      },
+      "promises": [
+        {
+          "id": "wb-2-p1",
+          "text": "Set up 24x7 ambulance bays at 5 hubs",
+          "status": "Broken",
+          "source": {
+            "label": "ADR / MyNeta",
+            "url": "https://myneta.info"
+          }
+        },
+        {
+          "id": "wb-2-p2",
+          "text": "Publish quarterly MPLADS spending online",
+          "status": "In Progress",
+          "source": {
+            "label": "Lok Sabha / Sansad",
+            "url": "https://sansad.in"
+          }
+        },
+        {
+          "id": "wb-2-p3",
+          "text": "Pedestrianise Gariahat market hours",
+          "status": "Broken",
+          "source": {
+            "label": "MPLADS e-SAKSHI",
+            "url": "https://mplads.mospi.gov.in"
+          }
+        }
+      ]
+    },
+    {
+      "id": "wb-3",
+      "name": "Rajib Chakrabortty",
+      "party": "Rashtriya Pragati Dal",
+      "constituency": "kolkata-dakshin",
+      "age": 54,
+      "education": "Graduate Professional",
+      "incumbent": false,
+      "assets": {
+        "movable": 24100,
+        "immovable": 73900
+      },
+      "liabilities": 29600,
+      "netWorth": 68400,
+      "assetGrowthPct": 52,
+      "wealthHistory": [
+        {
+          "year": 2019,
+          "netWorth": 44550
+        },
+        {
+          "year": 2020,
+          "netWorth": 49420
+        },
+        {
+          "year": 2021,
+          "netWorth": 52141
+        },
+        {
+          "year": 2022,
+          "netWorth": 57852
+        },
+        {
+          "year": 2023,
+          "netWorth": 64163
+        },
+        {
+          "year": 2024,
+          "netWorth": 68400
+        }
+      ],
+      "cases": {
+        "serious": [
+          {
+            "section": "IPC 420",
+            "description": "Cheating and dishonestly inducing delivery of property"
+          },
+          {
+            "section": "IPC 120B",
+            "description": "Criminal conspiracy"
+          }
+        ],
+        "other": [
+          {
+            "section": "IPC 188",
+            "description": "Disobedience to order promulgated by public servant"
+          }
+        ]
+      },
+      "promises": [
+        {
+          "id": "wb-3-p1",
+          "text": "Pedestrianise Gariahat market hours",
+          "status": "Fulfilled",
+          "source": {
+            "label": "Lok Sabha / Sansad",
+            "url": "https://sansad.in"
+          }
+        },
+        {
+          "id": "wb-3-p2",
+          "text": "Plant 50,000 trees along arterial roads",
+          "status": "Stalled",
+          "source": {
+            "label": "MPLADS e-SAKSHI",
+            "url": "https://mplads.mospi.gov.in"
+          }
+        },
+        {
+          "id": "wb-3-p3",
+          "text": "Restore Tolly Nullah embankments",
+          "status": "Fulfilled",
+          "source": {
+            "label": "ECI Affidavit Portal (Form 26)",
+            "url": "https://affidavit.eci.gov.in"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ka-1",
+      "name": "Naveen Gowdappa",
+      "party": "Jan Vikas Morcha",
+      "constituency": "bengaluru-south",
+      "age": 42,
+      "education": "Graduate Professional",
+      "incumbent": true,
+      "assets": {
+        "movable": 88200,
+        "immovable": 156000
+      },
+      "liabilities": 24100,
+      "netWorth": 220100,
+      "assetGrowthPct": 71,
+      "wealthHistory": [
+        {
+          "year": 2019,
+          "netWorth": 126139
+        },
+        {
+          "year": 2020,
+          "netWorth": 143292
+        },
+        {
+          "year": 2021,
+          "netWorth": 162713
+        },
+        {
+          "year": 2022,
+          "netWorth": 175815
+        },
+        {
+          "year": 2023,
+          "netWorth": 199684
+        },
+        {
+          "year": 2024,
+          "netWorth": 220100
+        }
+      ],
+      "cases": {
+        "serious": [],
+        "other": []
+      },
+      "promises": [
+        {
+          "id": "ka-1-p1",
+          "text": "Rejuvenate 4 neighbourhood lakes",
+          "status": "Stalled",
+          "source": {
+            "label": "ECI Affidavit Portal (Form 26)",
+            "url": "https://affidavit.eci.gov.in"
+          }
+        },
+        {
+          "id": "ka-1-p2",
+          "text": "Decentralised waste-segregation units in each ward",
+          "status": "Fulfilled",
+          "source": {
+            "label": "ADR / MyNeta",
+            "url": "https://myneta.info"
+          }
+        },
+        {
+          "id": "ka-1-p3",
+          "text": "Reduce junction wait time by 20%",
+          "status": "Stalled",
+          "source": {
+            "label": "Lok Sabha / Sansad",
+            "url": "https://sansad.in"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ka-2",
+      "name": "Lakshmi Hegdeshwar",
+      "party": "Rashtriya Pragati Dal",
+      "constituency": "bengaluru-south",
+      "age": 56,
+      "education": "Post Graduate",
+      "incumbent": false,
+      "assets": {
+        "movable": 46900,
+        "immovable": 112000
+      },
+      "liabilities": 15200,
+      "netWorth": 143700,
+      "assetGrowthPct": 31,
+      "wealthHistory": [
+        {
+          "year": 2019,
+          "netWorth": 110792
+        },
+        {
+          "year": 2020,
+          "netWorth": 113466
+        },
+        {
+          "year": 2021,
+          "netWorth": 122206
+        },
+        {
+          "year": 2022,
+          "netWorth": 131567
+        },
+        {
+          "year": 2023,
+          "netWorth": 134784
+        },
+        {
+          "year": 2024,
+          "netWorth": 143700
+        }
+      ],
+      "cases": {
+        "serious": [],
+        "other": [
+          {
+            "section": "IPC 506",
+            "description": "Criminal intimidation"
+          }
+        ]
+      },
+      "promises": [
+        {
+          "id": "ka-2-p1",
+          "text": "Reduce junction wait time by 20%",
+          "status": "Broken",
+          "source": {
+            "label": "ADR / MyNeta",
+            "url": "https://myneta.info"
+          }
+        },
+        {
+          "id": "ka-2-p2",
+          "text": "Free coaching hubs in government PU colleges",
+          "status": "In Progress",
+          "source": {
+            "label": "Lok Sabha / Sansad",
+            "url": "https://sansad.in"
+          }
+        },
+        {
+          "id": "ka-2-p3",
+          "text": "Open data on every MPLADS rupee",
+          "status": "Broken",
+          "source": {
+            "label": "MPLADS e-SAKSHI",
+            "url": "https://mplads.mospi.gov.in"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ka-3",
+      "name": "Imran Pashashah",
+      "party": "Lok Samaj Party",
+      "constituency": "bengaluru-south",
+      "age": 50,
+      "education": "12th Pass",
+      "incumbent": false,
+      "assets": {
+        "movable": 9200,
+        "immovable": 27800
+      },
+      "liabilities": 8400,
+      "netWorth": 28600,
+      "assetGrowthPct": 48,
+      "wealthHistory": [
+        {
+          "year": 2019,
+          "netWorth": 19131
+        },
+        {
+          "year": 2020,
+          "netWorth": 21110
+        },
+        {
+          "year": 2021,
+          "netWorth": 22153
+        },
+        {
+          "year": 2022,
+          "netWorth": 24449
+        },
+        {
+          "year": 2023,
+          "netWorth": 26972
+        },
+        {
+          "year": 2024,
+          "netWorth": 28600
+        }
+      ],
+      "cases": {
+        "serious": [
+          {
+            "section": "IPC 307",
+            "description": "Attempt to murder"
+          }
+        ],
+        "other": [
+          {
+            "section": "IPC 143",
+            "description": "Unlawful assembly"
+          },
+          {
+            "section": "IPC 341",
+            "description": "Wrongful restraint"
+          }
+        ]
+      },
+      "promises": [
+        {
+          "id": "ka-3-p1",
+          "text": "Open data on every MPLADS rupee",
+          "status": "Fulfilled",
+          "source": {
+            "label": "Lok Sabha / Sansad",
+            "url": "https://sansad.in"
+          }
+        },
+        {
+          "id": "ka-3-p2",
+          "text": "Last-mile feeder buses to metro stations",
+          "status": "Stalled",
+          "source": {
+            "label": "MPLADS e-SAKSHI",
+            "url": "https://mplads.mospi.gov.in"
+          }
+        },
+        {
+          "id": "ka-3-p3",
+          "text": "Rejuvenate 4 neighbourhood lakes",
+          "status": "Fulfilled",
+          "source": {
+            "label": "ECI Affidavit Portal (Form 26)",
+            "url": "https://affidavit.eci.gov.in"
+          }
+        }
+      ]
+    },
+    {
+      "id": "rj-1",
+      "name": "Ramavtar Shekhawatt",
+      "party": "Rashtriya Pragati Dal",
+      "constituency": "jaipur",
+      "age": 63,
+      "education": "Graduate",
+      "incumbent": true,
+      "assets": {
+        "movable": 61300,
+        "immovable": 187000
+      },
+      "liabilities": 22700,
+      "netWorth": 225600,
+      "assetGrowthPct": 39,
+      "wealthHistory": [
+        {
+          "year": 2019,
+          "netWorth": 159056
+        },
+        {
+          "year": 2020,
+          "netWorth": 173351
+        },
+        {
+          "year": 2021,
+          "netWorth": 188856
+        },
+        {
+          "year": 2022,
+          "netWorth": 195780
+        },
+        {
+          "year": 2023,
+          "netWorth": 213333
+        },
+        {
+          "year": 2024,
+          "netWorth": 225600
+        }
+      ],
+      "cases": {
+        "serious": [],
+        "other": [
+          {
+            "section": "IPC 188",
+            "description": "Disobedience to order promulgated by public servant"
+          }
+        ]
+      },
+      "promises": [
+        {
+          "id": "rj-1-p1",
+          "text": "Piped water to every walled-city household",
+          "status": "Stalled",
+          "source": {
+            "label": "ECI Affidavit Portal (Form 26)",
+            "url": "https://affidavit.eci.gov.in"
+          }
+        },
+        {
+          "id": "rj-1-p2",
+          "text": "Renovate 60 anganwadi centres",
+          "status": "Fulfilled",
+          "source": {
+            "label": "ADR / MyNeta",
+            "url": "https://myneta.info"
+          }
+        },
+        {
+          "id": "rj-1-p3",
+          "text": "Trauma wing at district hospital",
+          "status": "Stalled",
+          "source": {
+            "label": "Lok Sabha / Sansad",
+            "url": "https://sansad.in"
+          }
+        }
+      ]
+    },
+    {
+      "id": "rj-2",
+      "name": "Sunita Rathorewal",
+      "party": "Jan Vikas Morcha",
+      "constituency": "jaipur",
+      "age": 48,
+      "education": "Post Graduate",
+      "incumbent": false,
+      "assets": {
+        "movable": 27400,
+        "immovable": 66800
+      },
+      "liabilities": 10300,
+      "netWorth": 83900,
+      "assetGrowthPct": 24,
+      "wealthHistory": [
+        {
+          "year": 2019,
+          "netWorth": 68338
+        },
+        {
+          "year": 2020,
+          "netWorth": 69223
+        },
+        {
+          "year": 2021,
+          "netWorth": 73741
+        },
+        {
+          "year": 2022,
+          "netWorth": 78522
+        },
+        {
+          "year": 2023,
+          "netWorth": 79563
+        },
+        {
+          "year": 2024,
+          "netWorth": 83900
+        }
+      ],
+      "cases": {
+        "serious": [],
+        "other": []
+      },
+      "promises": [
+        {
+          "id": "rj-2-p1",
+          "text": "Trauma wing at district hospital",
+          "status": "Broken",
+          "source": {
+            "label": "ADR / MyNeta",
+            "url": "https://myneta.info"
+          }
+        },
+        {
+          "id": "rj-2-p2",
+          "text": "Solar streetlights on bypass roads",
+          "status": "In Progress",
+          "source": {
+            "label": "Lok Sabha / Sansad",
+            "url": "https://sansad.in"
+          }
+        },
+        {
+          "id": "rj-2-p3",
+          "text": "Heritage-street vendor zoning plan",
+          "status": "Broken",
+          "source": {
+            "label": "MPLADS e-SAKSHI",
+            "url": "https://mplads.mospi.gov.in"
+          }
+        }
+      ]
+    },
+    {
+      "id": "rj-3",
+      "name": "Bhanwar Lal Meenawat",
+      "party": "Lok Samaj Party",
+      "constituency": "jaipur",
+      "age": 57,
+      "education": "8th Pass",
+      "incumbent": false,
+      "assets": {
+        "movable": 12800,
+        "immovable": 41200
+      },
+      "liabilities": 17900,
+      "netWorth": 36100,
+      "assetGrowthPct": 58,
+      "wealthHistory": [
+        {
+          "year": 2019,
+          "netWorth": 22620
+        },
+        {
+          "year": 2020,
+          "netWorth": 25287
+        },
+        {
+          "year": 2021,
+          "netWorth": 26887
+        },
+        {
+          "year": 2022,
+          "netWorth": 30064
+        },
+        {
+          "year": 2023,
+          "netWorth": 33603
+        },
+        {
+          "year": 2024,
+          "netWorth": 36100
+        }
+      ],
+      "cases": {
+        "serious": [
+          {
+            "section": "IPC 406",
+            "description": "Criminal breach of trust"
+          }
+        ],
+        "other": [
+          {
+            "section": "IPC 504",
+            "description": "Intentional insult to provoke breach of peace"
+          },
+          {
+            "section": "IPC 506",
+            "description": "Criminal intimidation"
+          }
+        ]
+      },
+      "promises": [
+        {
+          "id": "rj-3-p1",
+          "text": "Heritage-street vendor zoning plan",
+          "status": "Fulfilled",
+          "source": {
+            "label": "Lok Sabha / Sansad",
+            "url": "https://sansad.in"
+          }
+        },
+        {
+          "id": "rj-3-p2",
+          "text": "Monthly open-house with the MP",
+          "status": "Stalled",
+          "source": {
+            "label": "MPLADS e-SAKSHI",
+            "url": "https://mplads.mospi.gov.in"
+          }
+        },
+        {
+          "id": "rj-3-p3",
+          "text": "Piped water to every walled-city household",
+          "status": "Fulfilled",
+          "source": {
+            "label": "ECI Affidavit Portal (Form 26)",
+            "url": "https://affidavit.eci.gov.in"
+          }
+        }
+      ]
+    },
+    {
+      "id": "as-1",
+      "name": "Dhruba Jyoti Baruahand",
+      "party": "Lok Samaj Party",
+      "constituency": "guwahati",
+      "age": 55,
+      "education": "Graduate",
+      "incumbent": true,
+      "assets": {
+        "movable": 33100,
+        "immovable": 84500
+      },
+      "liabilities": 11900,
+      "netWorth": 105700,
+      "assetGrowthPct": 33,
+      "wealthHistory": [
+        {
+          "year": 2019,
+          "netWorth": 77884
+        },
+        {
+          "year": 2020,
+          "netWorth": 84138
+        },
+        {
+          "year": 2021,
+          "netWorth": 90858
+        },
+        {
+          "year": 2022,
+          "netWorth": 93362
+        },
+        {
+          "year": 2023,
+          "netWorth": 100838
+        },
+        {
+          "year": 2024,
+          "netWorth": 105700
+        }
+      ],
+      "cases": {
+        "serious": [],
+        "other": [
+          {
+            "section": "IPC 341",
+            "description": "Wrongful restraint"
+          }
+        ]
+      },
+      "promises": [
+        {
+          "id": "as-1-p1",
+          "text": "Reduce waterlogging in 8 flood-prone wards",
+          "status": "Stalled",
+          "source": {
+            "label": "ECI Affidavit Portal (Form 26)",
+            "url": "https://affidavit.eci.gov.in"
+          }
+        },
+        {
+          "id": "as-1-p2",
+          "text": "Repair 30 government school buildings",
+          "status": "Fulfilled",
+          "source": {
+            "label": "ADR / MyNeta",
+            "url": "https://myneta.info"
+          }
+        },
+        {
+          "id": "as-1-p3",
+          "text": "Open an urban health centre in Beltola",
+          "status": "Stalled",
+          "source": {
+            "label": "Lok Sabha / Sansad",
+            "url": "https://sansad.in"
+          }
+        }
+      ]
+    },
+    {
+      "id": "as-2",
+      "name": "Anamika Choudhurian",
+      "party": "Jan Vikas Morcha",
+      "constituency": "guwahati",
+      "age": 41,
+      "education": "Post Graduate",
+      "incumbent": false,
+      "assets": {
+        "movable": 15600,
+        "immovable": 29300
+      },
+      "liabilities": 4100,
+      "netWorth": 40800,
+      "assetGrowthPct": 29,
+      "wealthHistory": [
+        {
+          "year": 2019,
+          "netWorth": 31944
+        },
+        {
+          "year": 2020,
+          "netWorth": 32615
+        },
+        {
+          "year": 2021,
+          "netWorth": 35019
+        },
+        {
+          "year": 2022,
+          "netWorth": 37586
+        },
+        {
+          "year": 2023,
+          "netWorth": 38386
+        },
+        {
+          "year": 2024,
+          "netWorth": 40800
+        }
+      ],
+      "cases": {
+        "serious": [],
+        "other": []
+      },
+      "promises": [
+        {
+          "id": "as-2-p1",
+          "text": "Open an urban health centre in Beltola",
+          "status": "Broken",
+          "source": {
+            "label": "ADR / MyNeta",
+            "url": "https://myneta.info"
+          }
+        },
+        {
+          "id": "as-2-p2",
+          "text": "Real-time flood alerts via SMS",
+          "status": "In Progress",
+          "source": {
+            "label": "Lok Sabha / Sansad",
+            "url": "https://sansad.in"
+          }
+        },
+        {
+          "id": "as-2-p3",
+          "text": "Bus shelters on major corridors",
+          "status": "Broken",
+          "source": {
+            "label": "MPLADS e-SAKSHI",
+            "url": "https://mplads.mospi.gov.in"
+          }
+        }
+      ]
+    },
+    {
+      "id": "as-3",
+      "name": "Pranjal Hazarikash",
+      "party": "Rashtriya Pragati Dal",
+      "constituency": "guwahati",
+      "age": 59,
+      "education": "Graduate Professional",
+      "incumbent": false,
+      "assets": {
+        "movable": 40800,
+        "immovable": 119000
+      },
+      "liabilities": 38200,
+      "netWorth": 121600,
+      "assetGrowthPct": 64,
+      "wealthHistory": [
+        {
+          "year": 2019,
+          "netWorth": 73405
+        },
+        {
+          "year": 2020,
+          "netWorth": 82676
+        },
+        {
+          "year": 2021,
+          "netWorth": 88563
+        },
+        {
+          "year": 2022,
+          "netWorth": 99769
+        },
+        {
+          "year": 2023,
+          "netWorth": 112348
+        },
+        {
+          "year": 2024,
+          "netWorth": 121600
+        }
+      ],
+      "cases": {
+        "serious": [
+          {
+            "section": "IPC 468",
+            "description": "Forgery for purpose of cheating"
+          }
+        ],
+        "other": [
+          {
+            "section": "IPC 143",
+            "description": "Unlawful assembly"
+          },
+          {
+            "section": "IPC 188",
+            "description": "Disobedience to order promulgated by public servant"
+          }
+        ]
+      },
+      "promises": [
+        {
+          "id": "as-3-p1",
+          "text": "Bus shelters on major corridors",
+          "status": "Fulfilled",
+          "source": {
+            "label": "Lok Sabha / Sansad",
+            "url": "https://sansad.in"
+          }
+        },
+        {
+          "id": "as-3-p2",
+          "text": "Publish project progress photos monthly",
+          "status": "Stalled",
+          "source": {
+            "label": "MPLADS e-SAKSHI",
+            "url": "https://mplads.mospi.gov.in"
+          }
+        },
+        {
+          "id": "as-3-p3",
+          "text": "Reduce waterlogging in 8 flood-prone wards",
+          "status": "Fulfilled",
+          "source": {
+            "label": "ECI Affidavit Portal (Form 26)",
+            "url": "https://affidavit.eci.gov.in"
+          }
+        }
+      ]
+    }
+  ]
+}
