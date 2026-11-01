@@ -77,8 +77,29 @@ const D: Record<string, string[]> = {
   sat: [],
 };
 
-export function translate(lang: string, key: TKey): string {
-  const i = KEYS.indexOf(key);
+/** Newer keys, translated for the larger languages only; everything else falls back to English. */
+export type XKey = "directory" | "rtiTool" | "compareMps" | "searchMp";
+const X: Record<string, Partial<Record<XKey, string>>> = {
+  en: { directory: "All 543 MPs", rtiTool: "RTI generator", compareMps: "Compare MPs", searchMp: "Search constituency, MP, party or state" },
+  hi: { directory: "सभी 543 सांसद", rtiTool: "आरटीआई जनरेटर", compareMps: "सांसदों की तुलना", searchMp: "निर्वाचन क्षेत्र, सांसद, पार्टी या राज्य खोजें" },
+  bn: { directory: "সব ৫৪৩ সাংসদ", rtiTool: "আরটিআই জেনারেটর", compareMps: "সাংসদ তুলনা", searchMp: "কেন্দ্র, সাংসদ, দল বা রাজ্য খুঁজুন" },
+  ta: { directory: "அனைத்து 543 எம்.பி.க்கள்", rtiTool: "RTI உருவாக்கி", compareMps: "எம்.பி.க்களை ஒப்பிடு", searchMp: "தொகுதி, எம்.பி., கட்சி அல்லது மாநிலத்தைத் தேடுங்கள்" },
+  te: { directory: "మొత్తం 543 ఎంపీలు", rtiTool: "ఆర్టీఐ జనరేటర్", compareMps: "ఎంపీల పోలిక", searchMp: "నియోజకవర్గం, ఎంపీ, పార్టీ లేదా రాష్ట్రం వెతకండి" },
+  mr: { directory: "सर्व ५४३ खासदार", rtiTool: "आरटीआय जनरेटर", compareMps: "खासदारांची तुलना", searchMp: "मतदारसंघ, खासदार, पक्ष किंवा राज्य शोधा" },
+  gu: { directory: "બધા 543 સાંસદ", rtiTool: "આરટીઆઈ જનરેટર", compareMps: "સાંસદોની સરખામણી", searchMp: "મતવિસ્તાર, સાંસદ, પક્ષ કે રાજ્ય શોધો" },
+  kn: { directory: "ಎಲ್ಲಾ 543 ಸಂಸದರು", rtiTool: "ಆರ್‌ಟಿಐ ಜನರೇಟರ್", compareMps: "ಸಂಸದರ ಹೋಲಿಕೆ", searchMp: "ಕ್ಷೇತ್ರ, ಸಂಸದ, ಪಕ್ಷ ಅಥವಾ ರಾಜ್ಯ ಹುಡುಕಿ" },
+  ml: { directory: "എല്ലാ 543 എം.പി.മാർ", rtiTool: "ആർടിഐ ജനറേറ്റർ", compareMps: "എം.പി.മാരെ താരതമ്യം ചെയ്യുക", searchMp: "മണ്ഡലം, എം.പി., പാർട്ടി അല്ലെങ്കിൽ സംസ്ഥാനം തിരയുക" },
+  pa: { directory: "ਸਾਰੇ 543 ਸਾਂਸਦ", rtiTool: "ਆਰਟੀਆਈ ਜਨਰੇਟਰ", compareMps: "ਸਾਂਸਦਾਂ ਦੀ ਤੁਲਨਾ", searchMp: "ਹਲਕਾ, ਸਾਂਸਦ, ਪਾਰਟੀ ਜਾਂ ਰਾਜ ਖੋਜੋ" },
+  or: { directory: "ସମସ୍ତ ୫୪୩ ସାଂସଦ", rtiTool: "ଆରଟିଆଇ ଜେନେରେଟର", compareMps: "ସାଂସଦ ତୁଳନା", searchMp: "ନିର୍ବାଚନମଣ୍ଡଳୀ, ସାଂସଦ, ଦଳ ବା ରାଜ୍ୟ ଖୋଜନ୍ତୁ" },
+  ur: { directory: "تمام 543 ارکان پارلیمان", rtiTool: "آر ٹی آئی جنریٹر", compareMps: "ارکان کا موازنہ", searchMp: "حلقہ، رکن، پارٹی یا ریاست تلاش کریں" },
+  as: { directory: "সকলো ৫৪৩ সাংসদ", rtiTool: "RTI জেনেৰেটৰ", compareMps: "সাংসদ তুলনা", searchMp: "সমষ্টি, সাংসদ, দল বা ৰাজ্য বিচাৰক" },
+  ne: { directory: "सबै ५४३ सांसद", rtiTool: "आरटीआई जेनेरेटर", compareMps: "सांसद तुलना", searchMp: "क्षेत्र, सांसद, दल वा राज्य खोज्नुहोस्" },
+};
+
+export function translate(lang: string, key: TKey | XKey): string {
+  const x = X[lang]?.[key as XKey] ?? X.en[key as XKey];
+  if (x !== undefined && (KEYS as readonly string[]).indexOf(key) < 0) return x;
+  const i = (KEYS as readonly string[]).indexOf(key);
   return D[lang]?.[i] || D.en[i];
 }
 

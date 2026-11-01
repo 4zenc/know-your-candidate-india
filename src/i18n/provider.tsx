@@ -1,12 +1,12 @@
 "use client";
 
 import { createContext, useCallback, useContext, useEffect, useMemo, useState } from "react";
-import { DEFAULT_LANG, LANGUAGES, translate, type TKey } from "./translations";
+import { DEFAULT_LANG, LANGUAGES, translate, type TKey, type XKey } from "./translations";
 
 interface Ctx {
   lang: string;
   setLang: (l: string) => void;
-  t: (k: TKey) => string;
+  t: (k: TKey | XKey) => string;
 }
 
 const I18nContext = createContext<Ctx>({ lang: DEFAULT_LANG, setLang: () => {}, t: (k) => translate(DEFAULT_LANG, k) });
@@ -41,7 +41,7 @@ export function I18nProvider({ children }: { children: React.ReactNode }) {
 export const useI18n = () => useContext(I18nContext);
 
 /** Inline translated label for use inside server components. */
-export function T({ k }: { k: TKey }) {
+export function T({ k }: { k: TKey | XKey }) {
   const { t } = useI18n();
   return <>{t(k)}</>;
 }

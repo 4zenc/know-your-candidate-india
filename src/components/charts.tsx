@@ -1,47 +1,22 @@
 "use client";
 
-import { Bar, BarChart, CartesianGrid, Cell, Line, LineChart, Pie, PieChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
-import { useI18n } from "@/i18n/provider";
+import { Bar, BarChart, CartesianGrid, Cell, Pie, PieChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
 import { formatINR } from "@/lib/utils";
 
 const tip = { background: "#09090b", border: "1px solid #27272a", borderRadius: 8, fontSize: 12, color: "#fafafa" };
 const axis = { fill: "#a1a1aa", fontSize: 12 };
 
-export function MpladsChart({ allocated, released, utilized }: { allocated: number; released: number; utilized: number }) {
-  const { t } = useI18n();
-  const data = [
-    { name: t("allocated"), v: allocated, fill: "#52525b" },
-    { name: t("released"), v: released, fill: "#a1a1aa" },
-    { name: t("utilized"), v: utilized, fill: "#fafafa" },
-  ];
+export function AssetsHistoryChart({ data }: { data: { label: string; lakh: number }[] }) {
   return (
-    <div className="h-56 w-full" role="img" aria-label={data.map((d) => `${d.name}: ${formatINR(d.v)}`).join(", ")}>
+    <div className="h-56 w-full" role="img" aria-label="Declared assets by election">
       <ResponsiveContainer>
-        <BarChart data={data} margin={{ left: -10, right: 8, top: 8 }}>
+        <BarChart data={data} margin={{ left: -10, right: 12, top: 8 }}>
           <CartesianGrid stroke="#27272a" vertical={false} />
-          <XAxis dataKey="name" tick={axis} axisLine={false} tickLine={false} />
-          <YAxis tick={axis} axisLine={false} tickLine={false} tickFormatter={(v) => `${v / 100}Cr`} />
+          <XAxis dataKey="label" tick={axis} axisLine={false} tickLine={false} />
+          <YAxis tick={axis} axisLine={false} tickLine={false} tickFormatter={(v) => `${(v / 100).toFixed(0)}Cr`} />
           <Tooltip cursor={{ fill: "#18181b" }} contentStyle={tip} formatter={(v) => formatINR(Number(v))} />
-          <Bar dataKey="v" radius={[6, 6, 0, 0]}>
-            {data.map((d) => <Cell key={d.name} fill={d.fill} />)}
-          </Bar>
+          <Bar dataKey="lakh" fill="#fafafa" radius={[6, 6, 0, 0]} />
         </BarChart>
-      </ResponsiveContainer>
-    </div>
-  );
-}
-
-export function WealthChart({ data }: { data: { year: number; netWorth: number }[] }) {
-  return (
-    <div className="h-56 w-full" role="img" aria-label="Net worth trajectory 2019 to 2024">
-      <ResponsiveContainer>
-        <LineChart data={data} margin={{ left: -10, right: 12, top: 8 }}>
-          <CartesianGrid stroke="#27272a" vertical={false} />
-          <XAxis dataKey="year" tick={axis} axisLine={false} tickLine={false} />
-          <YAxis tick={axis} axisLine={false} tickLine={false} tickFormatter={(v) => `${(v / 100).toFixed(1)}Cr`} />
-          <Tooltip contentStyle={tip} formatter={(v) => formatINR(Number(v))} />
-          <Line type="monotone" dataKey="netWorth" stroke="#fafafa" strokeWidth={2} dot={{ r: 3, fill: "#fafafa" }} />
-        </LineChart>
       </ResponsiveContainer>
     </div>
   );

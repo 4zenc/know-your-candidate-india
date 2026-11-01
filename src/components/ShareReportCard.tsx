@@ -52,7 +52,7 @@ export function ShareReportCard({ heading, sub, stats, summary, path }: Props) {
                   </div>
                 ))}
               </dl>
-              <p className="mt-5 text-[11px] text-zinc-500">Source: ECI affidavits · ADR · Sansad · MPLADS — sample data</p>
+              <p className="mt-5 text-[11px] text-zinc-500">Sources: ADR/MyNeta affidavits · PRS MP Track</p>
             </div>
             <div className="mt-3 grid grid-cols-3 gap-2">
               <button onClick={copy} className="flex h-10 items-center justify-center gap-2 rounded-lg border border-line bg-surface text-sm hover:border-zinc-500">

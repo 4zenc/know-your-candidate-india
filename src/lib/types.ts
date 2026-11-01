@@ -1,73 +1,95 @@
-export type PromiseStatus = "Fulfilled" | "In Progress" | "Stalled" | "Broken";
-export type ProjectStatus = "Completed" | "In Progress" | "Sanctioned" | "Delayed" | "Stalled";
-
-export interface SourceLink {
-  label: string;
-  url: string;
+/** All money values are ₹ lakh (1 crore = 100 lakh). Source: self-declared 2024 affidavits via ADR/MyNeta. */
+export interface PriorAsset {
+  election: string;
+  assetsLakh: number | null;
 }
 
-export interface CaseRecord {
-  section: string;
-  description: string;
+export interface PrsStats {
+  slug: string;
+  attendance: number | null;
+  attendance_nat: number | null;
+  debates: number | null;
+  debates_nat: number | null;
+  questions: number | null;
+  questions_nat: number | null;
+  private_bills: number | null;
+  period: string | null;
 }
 
-export interface Promise_ {
-  id: string;
-  text: string;
-  status: PromiseStatus;
-  source: SourceLink;
+export interface RunnerUp {
+  name: string;
+  party: string;
+  votes: number | null;
+  voteShare: number | null;
+  id?: string | null;
+  cases?: number;
+  education?: string;
+  assetsLakh?: number | null;
+  liabilitiesLakh?: number | null;
+  netWorthLakh?: number | null;
+  caseSummaries?: string[];
+  priorAssets?: PriorAsset[];
 }
 
-/** All monetary values are in ₹ lakh (1 crore = 100 lakh). */
-export interface Candidate {
+export interface ByElection {
   id: string;
   name: string;
   party: string;
-  constituency: string;
-  age: number;
-  education: string;
-  incumbent: boolean;
-  assets: { movable: number; immovable: number };
-  liabilities: number;
-  netWorth: number;
-  assetGrowthPct: number;
-  wealthHistory: { year: number; netWorth: number }[];
-  cases: { serious: CaseRecord[]; other: CaseRecord[] };
-  promises: Promise_[];
+  date: string | null;
+  assetsLakh: number | null;
+  liabilitiesLakh: number | null;
+  cases: number;
+  prsSlug: string | null;
 }
 
-export interface Project {
-  title: string;
-  category: string;
-  costLakh: number;
-  status: ProjectStatus;
-  completionPct: number;
-}
-
-export interface Constituency {
-  slug: string;
+export interface MP {
+  id: string; // MyNeta candidate id
   name: string;
-  state: string;
-  type: string;
-  pins: string[];
-  electors: number;
-  sittingMp: { candidateId: string; attendancePct: number; debates: number; questions: number; privateBills: number };
-  mplads: { allocated: number; released: number; utilized: number };
-  projects: Project[];
-  candidateIds: string[];
+  party: string;
+  constituency: string;
+  slug: string;
+  state: string | null;
+  reserved: "SC" | "ST" | null;
+  age: number | null;
+  education: string;
+  assetsLakh: number | null;
+  liabilitiesLakh: number | null;
+  netWorthLakh: number | null;
+  movableLakh: number | null;
+  immovableLakh: number | null;
+  priorAssets: PriorAsset[];
+  cases: number;
+  caseSummaries: string[];
+  votes: number | null;
+  voteShare: number | null;
+  margin: number | null;
+  runnerUp: RunnerUp | null;
+  prs: PrsStats | null;
+  byElection?: ByElection;
 }
 
 export interface Dataset {
-  disclaimer: string;
-  sources: SourceLink[];
-  constituencies: Constituency[];
-  candidates: Candidate[];
+  generated: string;
+  election: string;
+  featured: string[];
+  prsPeriod: string | null;
+  mps: MP[];
 }
 
 export interface SearchEntry {
-  type: "constituency" | "candidate";
+  t: "c" | "m";
   label: string;
   sub: string;
   href: string;
-  haystack: string;
+  h: string;
+}
+
+export interface DirectoryRow {
+  slug: string;
+  constituency: string;
+  state: string;
+  mp: string;
+  party: string;
+  id: string;
+  prs: string | null;
 }
